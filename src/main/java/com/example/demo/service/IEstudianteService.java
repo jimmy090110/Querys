@@ -20,4 +20,7 @@ public interface IEstudianteService {
 	
 	public Estudiante buscarEstudianteDinamicoCriteria(String nombre, String apellido, Double peso);
 
+	public int eliminarPorApellido(String apellido);
+	
+	public int actualizarPorApellido(String nombre,String apellido);
 }

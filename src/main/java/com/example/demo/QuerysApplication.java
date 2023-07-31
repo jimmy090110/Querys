@@ -20,20 +20,25 @@ public class QuerysApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
+//		
+//		System.out.println("BuscarQuery: "+this.estudianteService.buscarQuery("Ortega"));
+//		
+//		System.out.println("Buscar Named: "+this.estudianteService.buscarNamed("Ortega"));
+//	
+//		System.out.println("Buscar Named Query: "+ this.estudianteService.buscarNamedQuery("Ortega"));
+//		
+//		System.out.println("BuscarCriteria: "+this.estudianteService.buscarCriteriaAPIQuery("Ortega"));
+//		
+//		System.out.println("BuscarCriteriaDinamico: "+this.estudianteService.buscarEstudianteDinamicoCriteria("Jimmy", "Ortega", Double.valueOf(55)));
+//		
+//		System.out.println("Buscar TypedNative Query: "+this.estudianteService.buscarTypedNativeQuery("Ortega"));
+//	
+//		System.out.println("Buscar Native"+this.estudianteService.buscarNativeQuery("Ortega"));
 		
-		System.out.println("BuscarQuery: "+this.estudianteService.buscarQuery("Ortega"));
-		
-		System.out.println("Buscar Named: "+this.estudianteService.buscarNamed("Ortega"));
+		//System.out.println("ActualizarPor apellido"+ this.estudianteService.actualizarPorApellido("Juan", "Ortega"));
 	
-		System.out.println("Buscar Named Query: "+ this.estudianteService.buscarNamedQuery("Ortega"));
-		
-		System.out.println("BuscarCriteria: "+this.estudianteService.buscarCriteriaAPIQuery("Ortega"));
-		
-		System.out.println("BuscarCriteriaDinamico: "+this.estudianteService.buscarEstudianteDinamicoCriteria("Jimmy", "Ortega", Double.valueOf(55)));
-		
-		System.out.println("Buscar TypedNative Query: "+this.estudianteService.buscarTypedNativeQuery("Ortega"));
+		System.out.print("Borrar por Apellido"+this.estudianteService.eliminarPorApellido("Ortega"));
 	
-		System.out.println("Buscar Native"+this.estudianteService.buscarNativeQuery("Ortega"));
 	}
 
 }

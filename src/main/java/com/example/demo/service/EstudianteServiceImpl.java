@@ -60,4 +60,16 @@ public class EstudianteServiceImpl implements IEstudianteService{
 		return this.estudianteRepo.seleccionarEstudianteDinamicoCriteria(nombre, apellido, peso);
 	}
 
+	@Override
+	public int eliminarPorApellido(String apellido) {
+		
+		return this.estudianteRepo.eliminarPorApellido(apellido);
+	}
+
+	@Override
+	public int actualizarPorApellido(String nombre, String apellido) {
+		
+		return this.estudianteRepo.actualizarPorApellido(nombre, apellido);
+	}
+
 }

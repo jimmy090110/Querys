@@ -23,7 +23,9 @@ public interface IEstudianteRepo {
 	
 	public Estudiante seleccionarEstudianteDinamicoCriteria(String nombre, String apellido, Double peso);
 	
+	public int eliminarPorApellido(String apellido);
 	
+	public int actualizarPorApellido(String nombre, String apellido);
 	
 
 }
